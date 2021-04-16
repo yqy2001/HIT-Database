@@ -1,3 +1,24 @@
+## 3.1 SQL数据定义
+
+数据类型
+
+创建关系模式
+
+CREATE TABLE
+
+```sql
+create table student(
+    Snum char(5),
+    Sname varchar(10),
+    Ssex enum('M', 'F'),
+    Sage int
+);
+```
+
+
+
+定义关系模式，包括关系名、属性名、属性类型、主键、外键、完整性约束等
+
 ## 3.3 SQL数据查询
 
 ### 单关系查询
