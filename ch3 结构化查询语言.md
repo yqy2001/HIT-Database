@@ -8,11 +8,19 @@ CREATE TABLE
 
 ```sql
 create table student(
-    Snum char(5),
+    Snum char(5) primary key,
     Sname varchar(10),
     Ssex enum('M', 'F'),
-    Sage int
+    Sage int,
+    Dnum char(5),
+    Sd date
 );
+```
+
+增加主键：
+
+```sql
+alter table student add primary key (Snun);
 ```
 
 
