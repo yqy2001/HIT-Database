@@ -95,7 +95,7 @@ IO代价3B(R)，内存页数要求$B(R)\le M^2$
 
 不同桶的元组一定不同，重复元组一定在相同的桶中
 
-![image-20210830185855192](ch9 查询执行.assets/image-20210830185855192.png)
+<img src="ch9 查询执行.assets/image-20210830185855192.png" alt="image-20210830185855192" style="zoom: 67%;" />
 
 3B(R)：哈希分桶一次，写入文件一次，每个桶执行一次去重一次
 
@@ -107,7 +107,7 @@ IO代价3B(R)，内存页数要求$B(R)\le M^2$
 
 **一趟集合差：**
 
-![image-20210830191820652](ch9 查询执行.assets/image-20210830191820652.png)
+<img src="ch9 查询执行.assets/image-20210830191820652.png" alt="image-20210830191820652" style="zoom:50%;" />
 
 IO代价：B(S)+B(R)；内存页数要求：B(S)<=M-1，内存查找结构约占B(S)页
 
@@ -139,11 +139,11 @@ IO代价为B(R)+B(S)，可用内存页数为$B(S)\le M-1$
 
 <img src="ch9 查询执行.assets/image-20210830193241383.png" alt="image-20210830193241383" style="zoom:50%;" />
 
-IO代价为T(S)T(R)+T(S)，$M\ge 2$，一个读R一个读S
+IO代价为T(S)T(R)+T(S) ，$M\ge 2$，一个读R一个读S
 
 **基于块的嵌套循环连接：**
 
-![image-20210830193723678](ch9 查询执行.assets/image-20210830193723678.png)
+<img src="ch9 查询执行.assets/image-20210830193723678.png" alt="image-20210830193723678" style="zoom: 67%;" />
 
 IO代价为B(S)+B(R)B(S)/(M-1)，M>=2
 

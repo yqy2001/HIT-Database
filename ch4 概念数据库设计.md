@@ -41,24 +41,24 @@ ER模型，将现实世界抽象为**实体**及实体间的**联系**。ER图�
 
 联系型表示为菱形，用直线将联系型与相应的实体联系起来：
 
-<img src="https://i.loli.net/2021/04/14/QNJkYZjbmsuVAhg.png" alt="image-20210414212800064" style="zoom: 67%;" />
+<img src="https://i.loli.net/2021/04/14/QNJkYZjbmsuVAhg.png" alt="image-20210414212800064" style="zoom: 50%;" />
 
 若一个实体型和自身联系，需要在ER图中标出实体型参与在联系型中的角色：
 
-![image-20210414213034868](https://i.loli.net/2021/04/14/8UDWqnSbwQTeLjt.png)
+<img src="https://i.loli.net/2021/04/14/8UDWqnSbwQTeLjt.png" alt="image-20210414213034868" style="zoom:50%;" />
 
 **基数比：**
 
 刻画实体型参与到联系型中的最大基数
 M:N：对实体型1的任意实体e，最多有N个实体型2的实体与e构成联系；对实体型2的任意实体$e'$，最多有M个实体型1的实体与$e'$构成联系
 
-![image-20210416081951336](https://i.loli.net/2021/04/16/BPErotvuhnkSyi1.png)
+<img src="https://i.loli.net/2021/04/16/BPErotvuhnkSyi1.png" alt="image-20210416081951336" style="zoom:50%;" />
 
 **存在依赖约束：**
 
 刻画实体型参与到联系型中的最小基数(即一个实体最少参与到几个联系中)。有两种情况，0个，表示此实体型部分参与联系，>=1个，表示此实体型全部参与联系，分别用单线和双线表示：
 
-![image-20210416085227491](https://i.loli.net/2021/04/16/JPChGNlfMrHwtEj.png)
+<img src="https://i.loli.net/2021/04/16/JPChGNlfMrHwtEj.png" alt="image-20210416085227491" style="zoom:50%;" />
 
 联系型可以有属性，一般出现在M:N的联系型中；N:1联系型的属性可以被移到N一方的实体型中。
 
@@ -69,4 +69,4 @@ M:N：对实体型1的任意实体e，最多有N个实体型2的实体与e构成
 * 确定实体，画出主键、实体间的联系
 * 确定每个联系的基数比、属性、存在依赖约束
 
-![image-20210827213719661](ch4 概念数据库设计.assets/image-20210827213719661.png)
+<img src="ch4 概念数据库设计.assets/image-20210827213719661.png" alt="image-20210827213719661" style="zoom:50%;" />

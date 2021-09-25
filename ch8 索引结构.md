@@ -28,7 +28,7 @@
 
 <img src="ch8 索引结构.assets/image-20210829210903818.png" alt="image-20210829210903818" style="zoom:50%;" />
 
-删除：找到entry然后删除
+​	：找到entry然后删除
 
 ### 线性哈希表
 
